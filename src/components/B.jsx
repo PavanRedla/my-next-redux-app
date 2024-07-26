@@ -9,7 +9,7 @@ export const B = () => {
     setLoc(eve.target.value);
   };
   const handleClick = () => {
-    alert(loc);
+    dispatch({ type: "LOC_UPDATE", payload: loc });
   };
   return (
     <div>
